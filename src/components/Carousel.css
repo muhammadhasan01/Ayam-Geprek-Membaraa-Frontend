@@ -1,0 +1,45 @@
+.carousel-container {
+    position: relative;
+    margin: -60px;
+}
+
+.carousel-container img {
+    width: 70%;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.4);
+}
+
+.carousel-container .carousel-left{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    cursor: pointer;
+    width: 8%;
+}
+
+.carousel-container .carousel-right{
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    cursor: pointer;
+    width: 8%;
+}
+
+.carousel-container .carousel-left img{
+    transform: scale(0.8);  
+    transition: 0.3s;
+    box-shadow: none;
+}
+
+.carousel-container .carousel-left img:hover{
+    transform: scale(0.9);
+}
+
+.carousel-container .carousel-right img{
+    transform: scale(0.8);  
+    transition: 0.3s;
+    box-shadow: none;
+}
+
+.carousel-container .carousel-right img:hover{
+    transform: scale(0.9);
+}

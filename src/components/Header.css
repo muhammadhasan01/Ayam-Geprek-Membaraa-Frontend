@@ -1,0 +1,42 @@
+.world {
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.outer {
+    background-color: #9f0000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inner {
+    align-items: center;
+    background-color: #9f0000;
+    flex-basis: 25%;
+    text-align: center;
+    padding: 16px 0;
+    font-family: Supersonic;
+    font-size: 22px;
+}
+
+.inner a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.inner a:hover{
+    transition: 0.2s ease-out;
+    color: #ffc63e;
+}
+
+
+.vl {
+    border-left: 2px solid rgba(255, 255, 255, 0.4);
+    height: 30px;
+    margin: 15px 0;
+  }

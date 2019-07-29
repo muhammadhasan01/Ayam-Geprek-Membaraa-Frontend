@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Supersonic";
+  src: url("./resources/Supersonic\ Rocketship.ttf");
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url("./resources/BebasNeue-Regular.ttf");
+}
+
+
+* {
+    margin:0;
+    padding:0;
+  }
+
+body {
+    background-color: #fff100;
+    background-image: url('./resources/bg-fire.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: 100%;
+}
