@@ -65,7 +65,7 @@ header{
     margin : 20px 20px 50px 20px;
     background-color : #FF696A;
     transition : transform .2s;
-    border : 1px black solid;
+    border : 2px black solid;
 } 	
 
 .pesan-sekarang:hover{
