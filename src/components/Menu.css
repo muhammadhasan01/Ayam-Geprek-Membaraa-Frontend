@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "Supersonic";
+    src: url("../resources/supersonic.ttf");
+  }
+  
+  @font-face {
+    font-family: "Bebas";
+    src: url("../resources/bebasNeue.ttf");
+  }
+
+*{
+    padding : 0;
+    margin : 0;
+}
+
+header{
+    font-family: Supersonic;
+    font-size : 30px;
+}
 .menu-container{
     width: 100%;
     display: flex;
@@ -13,4 +32,28 @@
 .title-img {
     z-index: 5;
     margin-bottom: 15px;
+}
+
+.menu-makanan{
+    font-family : Bebas;
+    font-size : 25px;
+}
+
+.menu-makanan img{
+    width : 230px;
+}
+
+.menu-makanan li{
+    list-style: none;
+    display: inline-block;
+    background : white;
+    padding : 10px;
+    margin : 20px 50px 20px 50px;
+    border-radius : 10px;
+    box-shadow : 5px 10px rgb(43, 43, 43);
+    transition : transform .2s;
+}
+
+.menu-makanan li:hover{
+    transform : scale(1.1);
 }
