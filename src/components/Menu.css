@@ -41,6 +41,8 @@ header{
 
 .menu-makanan img{
     width : 230px;
+    padding : 10px;
+    border-radius: 15px;
 }
 
 .menu-makanan li{
@@ -49,7 +51,7 @@ header{
     background : white;
     padding : 10px;
     margin : 20px 50px 20px 50px;
-    border-radius : 10px;
+    border-radius : 15px;
     box-shadow : 5px 5px rgb(43, 43, 43);
     transition : transform .2s;
 }
