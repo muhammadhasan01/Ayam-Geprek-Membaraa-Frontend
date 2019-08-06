@@ -1,8 +1,34 @@
 import React from 'react';
 import './Login.css'
-import LoginContent from './LoginContent';
 
 class Login extends React.Component {
+  constructor() {
+    super()
+
+    this.state = {
+        login: true, //false => signup
+        username: '',
+        password: '',
+      }
+      this.handleChange = this.handleChange.bind(this)
+      this.changeLoginSignUp = this.changeLoginSignUp.bind(this)
+    }
+
+  handleChange(event) {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
+  }
+
+  changeLoginSignUp(login) {
+    this.setState({
+      login: login
+    })
+  }
 
   render() {
       return(
@@ -10,11 +36,45 @@ class Login extends React.Component {
             <div className='title-img'>
                 <img src='./resources/title.png' alt='title'></img>
             </div>
-            <div className = 'login-signup'>
-              <div className = 'seperate'>Login</div><div className = 'seperate'>Signup</div>
-              <div className = 'parts-container'>
-                <LoginContent />
+            <div className='form-container'>
+              <div className='header-container'>
+                <div className='form-header'>
+                    <p style={this.state.login ? {color: 'black'} : {color: '#999'}}
+                    onClick={() => this.changeLoginSignUp(true)}>LOGIN</p>
+                </div>
+                <div className='form-header'>
+                    <p style={!this.state.login ? {color: 'black'} : {color: '#999'}}
+                    onClick={() => this.changeLoginSignUp(false)}>SIGN UP</p>
+                </div>
               </div>
+                
+              <div className='hl'></div>
+
+              <div className='form-body'>
+                  <div className='input-field'>
+                    <p>USERNAME:</p>
+                    <input 
+                      type="text" name="username" 
+                      placeholder="Username" value={this.state.username} 
+                      onChange={this.handleChange}>
+                    </input>
+                  </div>
+                  <div className='input-field'>
+                    <p>PASSWORD:</p>
+                    <input 
+                      type="password" name="password" 
+                      placeholder="Password" value={this.state.password} 
+                      onChange={this.handleChange}>
+                    </input>
+                  </div>
+
+                  <div className="submitbtn-container">
+                    <div className="submitbtn" style={{backgroundColor: '#ddd'}}>
+                      {this.state.login ? <p>LOG IN</p> : <p>SIGN UP</p>}
+                    </div>
+                  </div>
+              </div>
+
             </div>
         </div>
       )

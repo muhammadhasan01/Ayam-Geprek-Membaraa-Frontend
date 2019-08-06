@@ -1,22 +1,3 @@
-@font-face {
-    font-family: "Supersonic";
-    src: url("../resources/supersonic.ttf");
-  }
-  
-  @font-face {
-    font-family: "Bebas";
-    src: url("../resources/bebasNeue.ttf");
-  }
-
-*{
-    padding : 0;
-    margin : 0;
-}
-
-header{
-    font-family: Supersonic;
-    font-size : 30px;
-}
 .menu-container{
     width: 100%;
     display: flex;
@@ -34,42 +15,71 @@ header{
     margin-bottom: 15px;
 }
 
-.menu-makanan{
-    font-family : Bebas;
-    font-size : 25px;
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
 }
 
-.menu-makanan img{
-    width : 230px;
-    padding : 10px;
-    border-radius: 15px;
+.paket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    flex-basis: 250px;
+    margin: 15px 50px;
+    overflow:hidden;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.0);
+    transition: transform 0.1s ease-out;
 }
 
-.menu-makanan li{
-    list-style: none;
-    display: inline-block;
-    background : white;
-    padding : 10px;
-    margin : 20px 50px 20px 50px;
-    border-radius : 15px;
-    box-shadow : 5px 5px rgb(43, 43, 43);
-    transition : transform .2s;
+.paket:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.paket img {
+    object-fit: cover;
+    width: 250px;
+    height: 200px;
 }
 
-.menu-makanan li:hover{
-    transform : scale(1.1);
+.paket .text {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.pesan-sekarang{
-    font-family: bebas;
-    font-size : 25px;
-    padding : 15px 25px 15px 30px;
-    margin : 20px 20px 50px 20px;
-    background-color : #FF696A;
-    transition : transform .2s;
-    border : 2px black solid;
-} 	
+.paket .text p {
+    font-family: Bebas;
+    font-size: 20px;
+}
 
-.pesan-sekarang:hover{
-    transform : scale(1.1);
+.orderbtn-menu {
+    margin-top: 20px;
+    font-family: Bebas;
+    font-size: 22px;
+    background-color: #ff6969;
+    vertical-align: middle;
+    border-radius: 3px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), inset 0px 2px 2px 5px rgba(0,0,0,0);    
+}
+
+.orderbtn-menu:hover {
+    transition-duration: 0.1s;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2), inset 200px 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.orderbtn-menu a{
+    display: block;
+    padding: 15px 30px 13px 30px;
+    color: black;
+    text-decoration: none;
 }

@@ -1,25 +1,16 @@
-@font-face {
-    font-family: "Supersonic";
-    src: url("../resources/supersonic.ttf");
-  }
-  
-  @font-face {
-    font-family: "Bebas";
-    src: url("../resources/bebasNeue.ttf");
-  }
-
-*{
-    padding : 0;
-    margin : 0;
-}
-
-
 .login-container{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+
+.login-container .hl {
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    width: 80%;
+    align-self: center;
 }
 
 .title-img img {
@@ -31,18 +22,100 @@
     margin-bottom: 15px;
 }
 
-.login-signup{
-    font-family : Bebas;
-    font-size : 30px;
-    background-color : white;
+.form-container {
+    background-color: #fefefe;
+    border-radius: 5px;
+    width: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
 }
 
-.seperate{
-    display : inline-block;
-    margin : 20px 100px 20px 100px;
+
+.form-header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-self: center;
+    width: 20%;
+
 }
 
-.parts-container {
-    display : block;
-    padding : 15px 30px 15px 30px;
+.form-header p{
+    font-family: Bebas;
+    font-size: 30px;
+    display: block;
+    cursor: pointer;
+    color: black;
+}
+
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-body {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-self: center;
+    width: 50%;
+}
+
+.form-body .input-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.form-body .input-field input{
+    height: 24px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding-left: 7px;
+    margin-top: -1px;
+}
+
+.form-body p{
+    font-family: Bebas;
+    font-size: 22px;
+    color: black;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+.submitbtn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.submitbtn {
+    margin: 10px 30px 9px 30px;
+    align-self: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), inset 0px 2px 2px 5px rgba(0,0,0,0);   
+    cursor: pointer; 
+}
+
+.submitbtn:hover {
+    transition-duration: 0.1s;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2), inset 200px 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.submitbtn p {
+    margin: auto;
+    color: black;
+    font-size: 26px;
+    font-family: Bebas;
+    display: block;
+    padding: 10px 30px 9px 30px;
 }
