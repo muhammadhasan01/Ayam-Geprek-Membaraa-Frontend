@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "Supersonic";
+    src: url("../resources/supersonic.ttf");
+  }
+  
+  @font-face {
+    font-family: "Bebas";
+    src: url("../resources/bebasNeue.ttf");
+  }
+
+*{
+    padding : 0;
+    margin : 0;
+}
+
+
 .login-container{
     width: 100%;
     display: flex;
@@ -13,4 +29,20 @@
 .title-img {
     z-index: 5;
     margin-bottom: 15px;
+}
+
+.login-signup{
+    font-family : Bebas;
+    font-size : 30px;
+    background-color : white;
+}
+
+.seperate{
+    display : inline-block;
+    margin : 20px 100px 20px 100px;
+}
+
+.parts-container {
+    display : block;
+    padding : 15px 30px 15px 30px;
 }
