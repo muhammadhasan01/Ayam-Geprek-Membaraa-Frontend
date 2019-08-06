@@ -15,7 +15,7 @@ class Menu extends React.Component {
               <li><img src = '../resources/paket-2.jpg' alt = 'paket ayam geprek'></img><figcaption>Paket Hemat</figcaption></li>
               <li><img src = '../resources/paket-3.jpg' alt = 'paket ayam geprek'></img><figcaption>Paket Tambahan</figcaption></li>
             </ul>
-            
+            <div className = "pesan-sekarang">Pesan Sekarang!</div>
         </div>
       )
   }

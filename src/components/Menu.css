@@ -50,10 +50,24 @@ header{
     padding : 10px;
     margin : 20px 50px 20px 50px;
     border-radius : 10px;
-    box-shadow : 5px 10px rgb(43, 43, 43);
+    box-shadow : 5px 5px rgb(43, 43, 43);
     transition : transform .2s;
 }
 
 .menu-makanan li:hover{
+    transform : scale(1.1);
+}
+
+.pesan-sekarang{
+    font-family: bebas;
+    font-size : 25px;
+    padding : 15px 25px 15px 30px;
+    margin : 20px 20px 50px 20px;
+    background-color : #FF696A;
+    transition : transform .2s;
+    border : 1px black solid;
+} 	
+
+.pesan-sekarang:hover{
     transform : scale(1.1);
 }
