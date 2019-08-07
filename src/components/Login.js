@@ -52,15 +52,15 @@ class Login extends React.Component {
 
               <div className='form-body'>
                   <div className='input-field'>
-                    <p>USERNAME:</p>
+                    <p>EMAIL :</p>
                     <input 
-                      type="text" name="username" 
-                      placeholder="Username" value={this.state.username} 
+                      type="email" name="email" 
+                      placeholder="Email" value={this.state.username} 
                       onChange={this.handleChange}>
                     </input>
                   </div>
                   <div className='input-field'>
-                    <p>PASSWORD:</p>
+                    <p>PASSWORD :</p>
                     <input 
                       type="password" name="password" 
                       placeholder="Password" value={this.state.password} 
