@@ -104,28 +104,48 @@
     margin: 5px 0 20px 0;
 }
 
-.ringkasan-pesanan{
+.pesanan{
     background-color : white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     padding : 30px;
     width : 50%;
 }
 
-.ringkasan-pesanan header{
+.pesanan header{
     font-family: bebas;
     font-size : 25px;
     margin-bottom : 10px;
 }
 
 .line {
-    border-bottom: 2px solid rgba(0,0,0,0.2);
+    border-bottom: 2px solid rgba(134, 134, 134, 0.2);
     width: 100%;
     align-self: center;
 }
 
-.pesanan {
-    padding : 50px;
-    color : grey;
-    font-family: bebas;
-    font-size : 20px;
+.pesanan-user {
+    font-family : bebas;
+    font-size : 19px;
+    padding-top : 20px;
+    width : 100%;
+}
+
+.pesanan-user table {
+    width : 100%;
+    text-align : center;
+}
+
+.pesanan-user table th{
+    color : gray;
+    height : 20px;
+    padding : 5px;
+    font-weight : normal;
+}
+
+.pesanan-user table td{
+    padding : 5px;
+}
+
+.status-pesanan{
+    color : rgb(110, 189, 7);
 }
