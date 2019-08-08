@@ -9,6 +9,7 @@ class Login extends React.Component {
         login: true, //false => signup
         username: '',
         password: '',
+        sessionUname: 'Login'
       }
       this.handleChange = this.handleChange.bind(this)
       this.changeLoginSignUp = this.changeLoginSignUp.bind(this)
@@ -31,6 +32,8 @@ class Login extends React.Component {
   }
 
   render() {
+    if(!this.props.loggedin)
+    {
       return(
         <div className='login-container'>
             <div className='title-img'>
@@ -69,7 +72,7 @@ class Login extends React.Component {
                   </div>
 
                   <div className="submitbtn-container">
-                    <div className="submitbtn" style={{backgroundColor: '#ddd'}}>
+                    <div className="submitbtn" style={{backgroundColor: '#ddd'}} onClick={ () => this.props.requestLoginSignUp(this.state.login, this.state.username, this.state.password) }>
                       {this.state.login ? <p>LOG IN</p> : <p>SIGN UP</p>}
                     </div>
                   </div>
@@ -78,6 +81,23 @@ class Login extends React.Component {
             </div>
         </div>
       )
+    }
+    else {
+      return(
+        <div className='login-container'>
+            <div className='title-img'>
+                <img src='./resources/title.png' alt='title'></img>
+            </div>
+                
+              <div className="signoutbtn-container">
+                    <div className="signoutbtn" style={{backgroundColor: '#eee'}} onClick={this.props.signout}>
+                      <p>SIGN OUT</p>
+                    </div>
+              </div>
+        </div>
+      )
+      
+    }
   }
 }
 

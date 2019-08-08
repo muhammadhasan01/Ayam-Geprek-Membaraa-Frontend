@@ -103,10 +103,39 @@
     vertical-align: middle;
     border-radius: 3px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), inset 0px 2px 2px 5px rgba(0,0,0,0);   
-    cursor: pointer; 
+    cursor: pointer;
+    
 }
 
 .submitbtn:hover {
+    transition-duration: 0.1s;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2), inset 200px 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.signoutbtn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.signoutbtn {
+    margin: 10px 30px 9px 30px;
+    height: 80px;
+    width: 150px;
+    align-self: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), inset 0px 2px 2px 5px rgba(0,0,0,0);   
+    cursor: pointer; 
+    font-family: Bebas;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signoutbtn:hover {
     transition-duration: 0.1s;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2), inset 200px 2px 2px 5px rgba(0,0,0,0.1);
 }

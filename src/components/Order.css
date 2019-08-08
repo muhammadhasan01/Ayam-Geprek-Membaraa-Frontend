@@ -58,10 +58,17 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.bottom-container-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
 .orderbtn-order {
-    margin: 40px 0 15px 0;
+    margin: 40px 10px 15px 10px;
     align-self: center;
-    background-color: #ff6969;
     vertical-align: middle;
     border-radius: 3px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), inset 0px 2px 2px 5px rgba(0,0,0,0);   
@@ -74,27 +81,26 @@
 }
 
 .orderbtn-order p {
+    color: black;
     font-size: 22px;
     font-family: Bebas;
     display: block;
     padding: 15px 40px 13px 40px;
 }
 
-.orderbtn-order-disabled {
-    margin: 40px 0 15px 0;
-    align-self: center;
-    background-color: #999;
-    vertical-align: middle;
-    border-radius: 3px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), inset 0px 2px 2px 5px rgba(0,0,0,0);   
-}
-
-.orderbtn-order-disabled p {
+.orderbtn-order a {
+    color: black;
+    text-decoration: none;
     font-size: 22px;
     font-family: Bebas;
     display: block;
     padding: 15px 40px 13px 40px;
-    cursor: default;
+}
+
+.orderbtn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .desc-order {
@@ -102,4 +108,109 @@
     font-size: 16px;
     color: #555;
     margin: 5px 0 20px 0;
+}
+
+
+.ringkasan-container {
+    background-color: #fefefe;
+    border-radius: 5px;
+    width: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ringkasan-header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-self: center;
+    width: 80%;
+}
+
+.ringkasan-header p{
+    font-family: Bebas;
+    font-size: 30px;
+    color: black;
+}
+
+.ringkasan-footer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-self: center;
+    width: 80%;
+}
+
+.ringkasan-footer .footer-total{
+    text-align: right;
+    font-family: Bebas;
+    font-size: 20px;
+    color: black;
+    flex-basis: 42.5%;
+}
+
+.ringkasan-footer .footer-desc{
+    text-align: right;
+    font-family: Bebas;
+    font-size: 20px;
+    color: black;
+    flex-basis: 52.5%;
+}
+
+.ringkasan-footer .footer-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.ringkasan-container .hl {
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+.ringkasan-body {
+    align-self: left;
+    margin-left: 15%;
+}
+
+.ringkasan-order {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.ringkasan-order .order-sum{
+    text-align: left;
+    color: black;
+    font-family: Bebas;
+    font-size: 20px;
+    flex-basis: 10%;
+}
+
+.ringkasan-order .order-name{
+    text-align: left;
+    color: black;
+    font-family: Bebas;
+    font-size: 20px;
+    flex-basis: 60%;
+    align-self: flex-end;
+}
+
+.ringkasan-order .order-price{
+    text-align: right;
+    color: black;
+    font-family: Bebas;
+    font-size: 20px;
+    flex-basis: 14%;
+
+}
+
+
+.thanks-txt{
+    margin-top: 50px;
+    text-align: center;
+    color: #C70039;
+    font-family: "Supersonic";
+    font-size: 60px;
 }

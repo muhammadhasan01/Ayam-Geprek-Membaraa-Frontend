@@ -1,0 +1,152 @@
+.order-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title-img img {
+    width: 40%;
+}
+
+.title-img {
+    z-index: 5;
+    margin-bottom: 15px;
+}
+
+
+.map-container {
+    background-color: #fefefe;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.map-header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-self: center;
+    width: 80%;
+}
+
+.map-header p{
+    font-family: Bebas;
+    font-size: 30px;
+    color: black;
+}
+
+.map-header .hl {
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+.map {
+    width: 64%;
+    height: 350px;
+    align-self: center;
+    position: relative;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2), inset 0px 2px 2px 5px rgba(0,0,0,0);   
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.orderbtn-order {
+    margin: 40px 0 15px 0;
+    align-self: center;
+    background-color: #ff6969;
+    vertical-align: middle;
+    border-radius: 3px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), inset 0px 2px 2px 5px rgba(0,0,0,0);   
+    cursor: pointer; 
+}
+
+.orderbtn-order:hover {
+    transition-duration: 0.1s;
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2), inset 200px 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.orderbtn-order p {
+    font-size: 22px;
+    font-family: Bebas;
+    display: block;
+    padding: 15px 40px 13px 40px;
+}
+
+.orderbtn-order-disabled {
+    margin: 40px 0 15px 0;
+    align-self: center;
+    background-color: #999;
+    vertical-align: middle;
+    border-radius: 3px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), inset 0px 2px 2px 5px rgba(0,0,0,0);   
+}
+
+.orderbtn-order-disabled p {
+    font-size: 22px;
+    font-family: Bebas;
+    display: block;
+    padding: 15px 40px 13px 40px;
+    cursor: default;
+}
+
+.desc-order {
+    font-family: 'Arial Narrow';
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0 20px 0;
+}
+
+.pesanan{
+    background-color : white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    padding : 30px;
+    width : 50%;
+    margin : 10px 0px 30px 0px;
+}
+
+.pesanan header{
+    font-family: bebas;
+    font-size : 25px;
+    margin-bottom : 10px;
+}
+
+.line {
+    border-bottom: 2px solid rgba(134, 134, 134, 0.2);
+    width: 100%;
+    align-self: center;
+}
+
+.pesanan-user {
+    font-family : bebas;
+    font-size : 19px;
+    padding-top : 20px;
+    width : 100%;
+}
+
+.pesanan-user table {
+    width : 100%;
+    text-align : center;
+}
+
+.pesanan-user table th{
+    color : gray;
+    height : 20px;
+    padding : 5px;
+    font-weight : normal;
+}
+
+.pesanan-user table td{
+    padding : 5px;
+}
+
+.status-pesanan{
+    color : rgb(110, 189, 7);
+}
