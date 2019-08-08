@@ -27,6 +27,25 @@ class Order extends React.Component {
                 </table>
               </div>
             </div>
+
+            <div className = "pesanan">
+              <header>Riwayat Pemesanan</header>
+              <div className = 'line'></div>
+              <div className = 'pesanan-user'>
+                <table>
+                  <th>USERNAME</th>
+                  <th>PESANAN</th>
+                  <th>LOKASI</th>
+                  <th>HARGA</th>
+                  <tr>
+                    <td>MHASAN01</td>
+                    <td>APAGITU</td>
+                    <td>LOKACION</td>
+                    <td>15.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
         </div>
       )
   }
