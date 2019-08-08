@@ -1,5 +1,5 @@
 import React from 'react';
-import './Order.css'
+import './Order.css';
 
 class Order extends React.Component {
 
@@ -9,7 +9,13 @@ class Order extends React.Component {
             <div className='title-img'>
                 <img src='./resources/title.png' alt='title'></img>
             </div>
-            <h3>this is the Order page.</h3>
+            <div className = "ringkasan-pesanan">
+              <header>RINGKASAN PESANAN</header>
+              <div className = 'line'></div>
+              <div className = 'pesanan'>
+                ANDA BELUM MEMESAN
+              </div>
+            </div>
         </div>
       )
   }

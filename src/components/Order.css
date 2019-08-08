@@ -103,3 +103,29 @@
     color: #555;
     margin: 5px 0 20px 0;
 }
+
+.ringkasan-pesanan{
+    background-color : white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    padding : 30px;
+    width : 50%;
+}
+
+.ringkasan-pesanan header{
+    font-family: bebas;
+    font-size : 25px;
+    margin-bottom : 10px;
+}
+
+.line {
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    width: 100%;
+    align-self: center;
+}
+
+.pesanan {
+    padding : 50px;
+    color : grey;
+    font-family: bebas;
+    font-size : 20px;
+}
