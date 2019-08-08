@@ -36,7 +36,7 @@ class Header extends React.Component {
         },
         {
           path: "/login",
-          main: () => <Login requestLoginSignUp={this.requestLoginSignUp} loggedin={this.state.loggedin} signout={this.signout}/>
+          main: () => <Login requestLoginSignUp={this.requestLoginSignUp} loggedin={this.state.loggedin} signout={this.signout} sessionUname={this.state.sessionUname}/>
         },
         {
             path: "/menu",
@@ -48,7 +48,7 @@ class Header extends React.Component {
         },
         {
           path: "/orderAdmin",
-          main: () => <OrderAdmin />
+          main: () => <OrderAdmin admin={this.state.admin}/>
         }
       ];
     }

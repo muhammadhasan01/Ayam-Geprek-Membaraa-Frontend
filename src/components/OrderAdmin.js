@@ -15,9 +15,8 @@ class OrderAdmin extends React.Component {
         }
     }
 
-    componentDidMount(){
-
-        const endpoint = "http://localhost:3001/viewOrder"
+    fetchAll(){
+      const endpoint = "http://localhost:3001/viewOrder"
         fetch(endpoint,
             {
               headers: {
@@ -46,8 +45,11 @@ class OrderAdmin extends React.Component {
          
     }
 
+    componentDidMount(){
+      this.fetchAll()
+    }
+
     openModalLoc(index, status) {
-      // alert(index)
       this.setState((prevState) => {
           const current = prevState.locmodals
           current[index] = status;
@@ -58,7 +60,6 @@ class OrderAdmin extends React.Component {
     }
 
     openModalMen(index, status) {
-      // alert(index)
       this.setState((prevState) => {
           const current = prevState.menumodals
           current[index] = status;
@@ -68,8 +69,27 @@ class OrderAdmin extends React.Component {
         })
     }
 
+    makeDone(id){
+      this.fetchAll()
+      const endpoint = "http://localhost:3001/orderdone"
+        fetch(endpoint,
+            {
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({_id:id}),
+              method: "POST"
+            }).then(
+              this.fetchAll()
+            )
+    }
+
   render() {
       return(
+        !this.props.admin ? (
+          <div>You must be an admin to view this page.</div>
+        ) : 
+        (
         <div className='order-container'>
             <div className='title-img'>
                 <img src='./resources/title.png' alt='title'></img>
@@ -90,7 +110,8 @@ class OrderAdmin extends React.Component {
                   <tbody>                  
                   {
                     this.state.orders.map(
-                      ({_id, loc, order, username, subtotal}, index) =>
+                      ({_id, loc, order, username, subtotal, done}, index) =>
+                      (!done) &&
                         <tr key={_id}>
                           <td>{username}</td>
                           <td>
@@ -112,7 +133,7 @@ class OrderAdmin extends React.Component {
                               >  
                             </img>
                           </td>
-                          <td className = "status-pesanan">SELESAI</td>
+                          <td className = "status-pesanan" onClick={() => this.makeDone(_id)}>SELESAI</td>
                         </tr>     
                     )
                   }
@@ -145,6 +166,7 @@ class OrderAdmin extends React.Component {
             </div>
         </div>
       )
+    )
   }
 }
 

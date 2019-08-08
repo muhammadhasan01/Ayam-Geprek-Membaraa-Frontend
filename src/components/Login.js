@@ -9,7 +9,6 @@ class Login extends React.Component {
         login: true, //false => signup
         username: '',
         password: '',
-        sessionUname: 'Login'
       }
       this.handleChange = this.handleChange.bind(this)
       this.changeLoginSignUp = this.changeLoginSignUp.bind(this)
@@ -88,6 +87,10 @@ class Login extends React.Component {
             <div className='title-img'>
                 <img src='./resources/title.png' alt='title'></img>
             </div>
+
+            <div className='hi-txt-1'>Hello</div>
+            <div className='hi-txt-2'>{this.props.sessionUname}!</div>
+
                 
               <div className="signoutbtn-container">
                     <div className="signoutbtn" style={{backgroundColor: '#eee'}} onClick={this.props.signout}>

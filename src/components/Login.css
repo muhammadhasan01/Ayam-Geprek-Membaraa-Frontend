@@ -148,3 +148,19 @@
     display: block;
     padding: 10px 30px 9px 30px;
 }
+
+.hi-txt-1 {
+    font-family: Supersonic;
+    font-size: 40px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.hi-txt-2 {
+    font-family: Supersonic;
+    font-size: 60px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}

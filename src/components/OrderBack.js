@@ -96,6 +96,7 @@ class OrderBack extends React.Component {
         )
     }
     
+    
   render() {
       return(
         <div className='menu-container'>
@@ -163,9 +164,14 @@ class OrderBack extends React.Component {
                 </div>
             </div>
 
+            {this.state.subtotal ?
             <div className='bottom-container-back'>
-                  <div className='orderbtn-order' style={{backgroundColor: '#ff6969'}} onClick={this.orderNow}><p>PESAN SEKARANG!!</p></div>
-            </div> 
+                <div className='orderbtn-order' style={{backgroundColor: '#ff6969'}} onClick={this.orderNow}><p>PESAN SEKARANG!!</p></div>
+            </div>
+            :
+            <div/> 
+            }
+            
 
         </div>
       )
