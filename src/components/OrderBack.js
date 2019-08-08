@@ -67,7 +67,7 @@ class OrderBack extends React.Component {
             headers: {
                 'Content-Type': 'application/json'
         },
-            body: JSON.stringify({loc: this.props.loc, order: arr, username: this.props.sessionUname}),
+            body: JSON.stringify({loc: this.props.loc, order: arr, username: this.props.sessionUname, subtotal: this.state.subtotal, done:false}),
             method: "POST"
         })
         this.props.changeOrderStage()

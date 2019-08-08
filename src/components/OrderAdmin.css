@@ -110,6 +110,7 @@
     padding : 30px;
     width : 50%;
     margin : 10px 0px 30px 0px;
+    border-radius: 5px;
 }
 
 .pesanan header{
@@ -149,4 +150,28 @@
 
 .status-pesanan{
     color : rgb(110, 189, 7);
+    cursor: pointer;
+}
+
+.status-pesanan:hover{
+    transition-duration: 0.2s;
+    filter: brightness(80%);
+}
+
+.menubtn{
+    cursor: pointer;
+}
+
+.menubtn:hover {
+    transition-duration: 0.2s;
+    filter: brightness(80%);
+}
+
+.locbtn{
+    cursor: pointer;
+}
+
+.locbtn:hover {
+    transition-duration: 0.2s;
+    filter: brightness(80%);
 }
