@@ -40,6 +40,7 @@ You should get a website running in <http://localhost:3000>
 ## Running the tests
 
 After running the back-end application too, you should be able to interact with the website, use some of these premade credentials to login or signup yourself.
+
 username | password | admin
 --- | --- | ---
 spartahmif | decrypt2018 | true
