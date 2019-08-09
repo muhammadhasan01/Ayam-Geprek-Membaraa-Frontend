@@ -50,14 +50,17 @@ You can test the website by navigating through pages from the navigation bar. Te
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Edit the homepage in the package.json file to match the path on the deployment server, and then build the application with
+```
+npm run-script build
+```
 
 ## Built With
 
 * [npm](https://www.npmjs.com/) - Dependency Management
 * [React](https://reactjs.org/) - The front-end web framework used
 * [Node.js](https://nodejs.org/en/) - The back-end server
-
+* [mongoDB](https://www.mongodb.com/cloud/atlas) - Database
 
 ## Authors
 
