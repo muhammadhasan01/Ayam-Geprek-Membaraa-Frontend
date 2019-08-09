@@ -46,7 +46,6 @@ username | password | admin
 spartahmif | decrypt2018 | true
 normalperson | 12345 | False
 
-You can test the website by navigating through pages from the navigation bar. Test the Login page by signing up, logging in, and signing out again, with an admin account or a normal account. Test the Menu page by opening menus. Test the Order page by ordering some stuff with a normal account, sign out and then see the orders with an admin account.
 
 ## Deployment
 
