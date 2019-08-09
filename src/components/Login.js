@@ -30,6 +30,13 @@ class Login extends React.Component {
     })
   }
 
+  clearFields(){
+    this.setState({
+      username: '',
+      password: ''
+    })
+  }
+
   render() {
     if(!this.props.loggedin)
     {
@@ -71,7 +78,12 @@ class Login extends React.Component {
                   </div>
 
                   <div className="submitbtn-container">
-                    <div className="submitbtn" style={{backgroundColor: '#ddd'}} onClick={ () => this.props.requestLoginSignUp(this.state.login, this.state.username, this.state.password) }>
+                    <div className="submitbtn" style={{backgroundColor: '#ddd'}} 
+                    onClick={ () => {
+                      this.props.requestLoginSignUp(this.state.login, this.state.username, this.state.password); 
+                      this.clearFields(); 
+                      this.changeLoginSignUp(true) } 
+                    }>
                       {this.state.login ? <p>LOG IN</p> : <p>SIGN UP</p>}
                     </div>
                   </div>
