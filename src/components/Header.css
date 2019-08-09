@@ -23,6 +23,14 @@ nav {
     font-size: 22px;
 }
 
+.inner p{
+    display: block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
 .inner a{
     display: block;
     text-decoration: none;
@@ -34,6 +42,32 @@ nav {
     color: #ffc63e;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #af0000;
+}
+
+.dropdown-content a:hover {
+    background-color: #9f0000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+  }
 
 .vl {
     border-left: 2px solid rgba(255, 255, 255, 0.4);

@@ -4,7 +4,8 @@ import Homepage from './Homepage';
 import Menu from './Menu';
 import Login from './Login';
 import Order from './Order';
-import OrderAdmin from './OrderAdmin';
+import LihatPesananAdmin from './LihatPesananAdmin';
+import RiwayatPesanAdmin from './RiwayatPesanAdmin';
 import {
     BrowserRouter as Router,
     Route,
@@ -47,8 +48,12 @@ class Header extends React.Component {
           main: () => <Order sessionUname={this.state.sessionUname}/>
         },
         {
-          path: "/orderAdmin",
-          main: () => <OrderAdmin admin={this.state.admin}/>
+          path: "/orderList",
+          main: () => <LihatPesananAdmin admin={this.state.admin}/>
+        },
+        {
+          path: "/orderHistory",
+          main: () => <RiwayatPesanAdmin admin={this.state.admin}/>
         }
       ];
     }
@@ -95,7 +100,18 @@ class Header extends React.Component {
                         <div className="vl"></div>
                         <div className='inner'><Link to="/menu">MENU</Link></div>
                         <div className="vl"></div>
-                        <div className='inner'><Link to={this.state.admin ? "/orderAdmin" : "/order"}>{this.state.admin ? "PESANAN" : "PESAN SEKARANG!"}</Link></div>
+                        {
+                          !this.state.admin ? 
+                          <div className='inner'><Link to="/order">PESAN SEKARANG!</Link></div> :
+                          <div className='inner dropdown'>
+                            <p>PESANAN</p>
+                            <div class="dropdown-content">
+                              <Link to="/orderList">LIHAT PESANAN</Link>
+                              <Link to="/orderHistory">RIWAYAT PEMESANAN</Link>
+                            </div>
+                          </div>
+                        }
+                        
                     </div>
                 </nav>
 

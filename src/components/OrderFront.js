@@ -29,8 +29,8 @@ class OrderFront extends React.Component {
                 :
                 <div className='bottom-container'>
                   <div className='orderbtn-container'>
-                    <div className='orderbtn-order' style={{backgroundColor: '#00b140'}}><a href='https://www.gojek.com/gofood/'>GO-FOOD</a></div>
-                    <div className='orderbtn-order' style={{backgroundColor: '#00b140'}}><a href='https://www.grab.com/id/grabfood/'>GRABFOOD</a></div>
+                    <div className='orderbtn-order' style={{backgroundColor: '#00b140', marginRight: '10px'}}><a href='https://www.gojek.com/gofood/'>GO-FOOD</a></div>
+                    <div className='orderbtn-order' style={{backgroundColor: '#00b140', marginLeft: '10px'}}><a href='https://www.grab.com/id/grabfood/'>GRABFOOD</a></div>
                   </div>
                   <div className='desc-order'>*Lokasi anda jauh dari outlet kami, mohon order dengan mitra kami!</div>
                 </div> 

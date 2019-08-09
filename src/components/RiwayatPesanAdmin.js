@@ -4,7 +4,7 @@ import OrderAdminModalMap from './OrderAdminModalMap';
 import OrderAdminModalMenu from './OrderAdminModalMenu';
 
 
-class OrderAdmin extends React.Component {
+class RiwayatPesanAdmin extends React.Component {
     constructor() {
         super()
 
@@ -69,21 +69,6 @@ class OrderAdmin extends React.Component {
         })
     }
 
-    makeDone(id){
-      this.fetchAll()
-      const endpoint = "http://localhost:3001/orderdone"
-        fetch(endpoint,
-            {
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify({_id:id}),
-              method: "POST"
-            }).then(
-              this.fetchAll()
-            )
-    }
-
   render() {
       return(
         !this.props.admin ? (
@@ -95,7 +80,7 @@ class OrderAdmin extends React.Component {
                 <img src='./resources/title.png' alt='title'></img>
             </div>
             <div className = "pesanan">
-              <header>Pesanan</header>
+              <header>Riwayat Pemesanan</header>
               <div className = 'line'></div>
               <div className = 'pesanan-user'>
                 <table>
@@ -104,14 +89,14 @@ class OrderAdmin extends React.Component {
                       <th>USERNAME</th>
                       <th>PESANAN</th>
                       <th>LOKASI</th>
-                      <th>STATUS</th>
+                      <th>SUBTOTAL</th>
                     </tr>
                   </thead>
                   <tbody>                  
                   {
                     this.state.orders.map(
                       ({_id, loc, order, username, subtotal, done}, index) =>
-                      (!done) &&
+                      (done) &&
                         <tr key={_id}>
                           <td>{username}</td>
                           <td>
@@ -133,7 +118,7 @@ class OrderAdmin extends React.Component {
                               >  
                             </img>
                           </td>
-                          <td className = "status-pesanan" onClick={() => this.makeDone(_id)}>SELESAI</td>
+                          <td className = "subtotal">{Number(subtotal).toLocaleString().replace(',', '.')}</td>
                         </tr>     
                     )
                   }
@@ -170,4 +155,4 @@ class OrderAdmin extends React.Component {
   }
 }
 
-export default OrderAdmin;
+export default RiwayatPesanAdmin;
