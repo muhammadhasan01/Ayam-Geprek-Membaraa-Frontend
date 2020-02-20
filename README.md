@@ -1,6 +1,6 @@
 # Ayam Geprek Membaraa Web, Front-End
 
-Ayam Geprek Membaraa Web is a website specifically made for fulfilling the assignment Tech Milestone 2 of SPARTA HMIF ITB 2018. This website is also made to tackle some problems of Ayam Geprek Membaraa, a restaurant on Jalan Gelap Nyawang, with a tech-based solution.
+Ayam Geprek Membaraa Web is a website specifically made for fulfilling the assignment Tech Milestone 2 of SPARTA 2018. This website is also made to tackle some problems of Ayam Geprek Membaraa, a restaurant on Jalan Gelap Nyawang, with a tech-based solution.
 
 ## Getting Started
 
